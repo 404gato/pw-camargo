@@ -2,6 +2,7 @@ var btnDarkMode = document.querySelector("#btnDarkMode");
 var btnLightMode = document.querySelector("#btnLightMode");
 var tema = document.querySelector("#theme");
 
+// dark mode
 btnDarkMode.addEventListener('click', function toggleTheme() {
     var tema = document.getElementsByTagName('link')[0];
 
@@ -11,6 +12,8 @@ btnDarkMode.addEventListener('click', function toggleTheme() {
         theme.setAttribute('href', 'css/DarkMode.css');
     }
 });
+
+// light mode
 btnLightMode.addEventListener('click', function toggleTheme() {
     var tema = document.getElementsByTagName('link')[0];
 
@@ -19,7 +22,10 @@ btnLightMode.addEventListener('click', function toggleTheme() {
     } else {
         theme.setAttribute('href', 'css/LightMode.css');
     }
-}); 
+});
+
+
+
 /* botões dos elementos inicia */
 var buttonToxina = document.querySelector("#btnToxina");
 var buttonGlacial = document.querySelector("#btnGlacial");
@@ -44,7 +50,7 @@ var conteudoViral = document.querySelector("#conteudoViral");
 var conteudoColisivo = document.querySelector("#conteudoColisivo");
 
 
-buttonToxina.addEventListener('click', function () {
+buttonToxina.addEventListener('click', function() {
 
     if (conteudoToxina.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -71,7 +77,7 @@ buttonToxina.addEventListener('click', function () {
     }
 });
 
-buttonGlacial.addEventListener('click', function () {
+buttonGlacial.addEventListener('click', function() {
 
     if (conteudoGlacial.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -98,7 +104,7 @@ buttonGlacial.addEventListener('click', function () {
     }
 });
 
-buttonEletrico.addEventListener('click', function () {
+buttonEletrico.addEventListener('click', function() {
 
     if (conteudoEletrico.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -125,7 +131,7 @@ buttonEletrico.addEventListener('click', function () {
     }
 });
 
-buttonRadiacao.addEventListener('click', function () {
+buttonRadiacao.addEventListener('click', function() {
 
     if (conteudoRadiacao.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -152,7 +158,7 @@ buttonRadiacao.addEventListener('click', function () {
     }
 });
 
-buttonMagnetismo.addEventListener('click', function () {
+buttonMagnetismo.addEventListener('click', function() {
 
     if (conteudoMagnestismo.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -179,7 +185,7 @@ buttonMagnetismo.addEventListener('click', function () {
     }
 });
 
-buttonIgnio.addEventListener('click', function () {
+buttonIgnio.addEventListener('click', function() {
 
     if (conteudoIgnio.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -206,7 +212,7 @@ buttonIgnio.addEventListener('click', function () {
     }
 });
 
-buttonGasoso.addEventListener('click', function () {
+buttonGasoso.addEventListener('click', function() {
 
     if (conteudoGasoso.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -233,7 +239,7 @@ buttonGasoso.addEventListener('click', function () {
     }
 });
 
-buttonCorrosivo.addEventListener('click', function () {
+buttonCorrosivo.addEventListener('click', function() {
 
     if (conteudoCorrosivo.style.display === 'block') {
         conteudoToxina.style.display = 'none';
@@ -260,7 +266,7 @@ buttonCorrosivo.addEventListener('click', function () {
     }
 });
 
-buttonViral.addEventListener('click', function () {
+buttonViral.addEventListener('click', function() {
 
     if (conteudoViral.style.display === 'block') {
         conteudoViral.style.display = 'none'
@@ -287,7 +293,7 @@ buttonViral.addEventListener('click', function () {
     }
 });
 
-buttonColisivo.addEventListener('click', function () {
+buttonColisivo.addEventListener('click', function() {
 
     if (conteudoColisivo.style.display === 'block') {
         conteudoColisivo.style.display = 'none';
@@ -325,7 +331,7 @@ var contArmasTK = document.querySelector("#contArmasTK");
 var contEfemerasTK = document.querySelector("#contEfemerasTK");
 var contProgenitores = document.querySelector("#contProgenitores");
 
-buttonContDamage.addEventListener('click', function () {
+buttonContDamage.addEventListener('click', function() {
 
     if (contDamage.style.display === 'block') {
         contDamage.style.display = 'none';
@@ -340,7 +346,7 @@ buttonContDamage.addEventListener('click', function () {
     }
 });
 
-buttonContArmasTK.addEventListener('click', function () {
+buttonContArmasTK.addEventListener('click', function() {
 
     if (contArmasTK.style.display === 'block') {
         contArmasTK.style.display = 'none';
@@ -355,7 +361,7 @@ buttonContArmasTK.addEventListener('click', function () {
     }
 });
 
-buttonEfemerasTK.addEventListener('click', function () {
+buttonEfemerasTK.addEventListener('click', function() {
 
     if (contEfemerasTK.style.display === 'block') {
         contEfemerasTK.style.display = 'none';
@@ -370,7 +376,7 @@ buttonEfemerasTK.addEventListener('click', function () {
     }
 });
 
-buttonProgenitores.addEventListener('click', function () {
+buttonProgenitores.addEventListener('click', function() {
 
     if (contProgenitores.style.display === 'block') {
         contProgenitores.style.display = 'none';
@@ -392,7 +398,7 @@ var buttonArmasKuva = document.querySelector("#armasKuva");
 var cconteudoArmaTenet = document.querySelector("#conteudoArmaTenet");
 var cconteudoArmaKuva = document.querySelector("#conteudoArmaKuva");
 
-buttonArmasTenet.addEventListener('click', function () {
+buttonArmasTenet.addEventListener('click', function() {
 
     if (conteudoArmaTenet.style.display === 'block') {
         conteudoArmaTenet.style.display = 'none';
@@ -402,7 +408,7 @@ buttonArmasTenet.addEventListener('click', function () {
     }
 });
 
-buttonArmasKuva.addEventListener('click', function () {
+buttonArmasKuva.addEventListener('click', function() {
 
     if (cconteudoArmaKuva.style.display === 'block') {
         conteudoArmaTenet.style.display = 'none';

@@ -2,16 +2,28 @@ body {
     margin: 0;
     background-color: #1B3057;
 }
+
+footer {
+    bottom: 0;
+    background-color: #B31F15;
+}
+
+#btnDarkMode {
+    display: none;
+}
+
 button {
     cursor: pointer;
-    text-align:center;
+    text-align: center;
 }
+
 #menuTop {
     background-color: #B31F15;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
 }
+
 #conteudoTotal {
     margin-top: 50px;
     display: flex;
@@ -19,12 +31,14 @@ button {
     justify-content: center;
     height: 550px;
 }
+
 #rodape {
     width: 100%;
     position: absolute;
     bottom: 0;
-    display:flex;
+    display: flex;
 }
+
 #menuL {
     background-color: white;
     float: left;
@@ -34,6 +48,7 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+
 #conteudoCentral {
     display: block;
     float: left;
@@ -41,28 +56,34 @@ button {
     margin: 1%;
     width: 700px;
 }
+
+
 /* campo de busca inicia */
+
 #campBusca {
     margin: 8px;
     width: 200px;
     height: 40px;
 }
+
 #campBuscaInserir {
     width: 150px;
     height: 40px;
-    background: linear-gradient(#1c1c1c,rgb(77, 0, 0) 30px,#1c1c1c);
+    background: linear-gradient(#1c1c1c, rgb(77, 0, 0) 30px, #1c1c1c);
     border: solid 1px darkgray;
     border-radius: 20px 0 0 20px;
     text-align: center;
     color: grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #campBuscaInserir:focus {
     outline: none;
     text-align: center;
     color: white;
     box-shadow: 0 0 30px red;
 }
+
 #campBuscaInserir::placeholder {
     text-align: center;
     color: grey;
@@ -79,14 +100,20 @@ button {
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #confirmaBusca:hover {
     cursor: pointer;
     box-shadow: 0 0 30px red;
     text-shadow: 0 0 30px red;
     color: red;
 }
+
+
 /* campo de busca termina */
+
+
 /* conteudo principal inicia */
+
 #menuConteudoCentral {
     height: 50px;
     width: auto;
@@ -94,184 +121,221 @@ button {
     flex-direction: row;
     justify-content: center;
 }
+
+
 /* botoes elementos inicia */
+
 #btnToxina {
     margin: 1px;
     border: solid 2px lime;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: lime;
     font-size: 15px;
 }
+
 #btnToxina:hover {
     text-shadow: 0 0 50px lime;
     box-shadow: 0 0 15px lime;
     border-radius: 0 0 0 15px;
 }
+
 #btnEletrico {
     margin: 1px;
     border: solid 2px mediumpurple;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
-    color:mediumpurple;
+    color: mediumpurple;
     font-size: 15px;
 }
+
 #btnEletrico:hover {
     text-shadow: 0 0 50px mediumpurple;
     box-shadow: 0 0 15px mediumpurple;
     border-radius: 0 0 0 0;
 }
+
 #btnMagnetismo {
     margin: 1px;
     border: solid 2px darkgray;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
-    color:darkgray;
+    color: darkgray;
     font-size: 15px;
 }
+
 #btnMagnetismo:hover {
     text-shadow: 0 0 50px darkgray;
     box-shadow: 0 0 15px darkgray;
     border-radius: 0 0 0 0;
 }
+
 #btnRadiacao {
     margin: 1px;
     border: solid 2px yellow;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: yellow;
     font-size: 15px;
 }
+
 #btnRadiacao:hover {
     text-shadow: 0 0 50px yellow;
     box-shadow: 0 0 15px yellow;
     border-radius: 0 0 0 0;
 }
+
 #btnGlacial {
     margin: 1px;
     border: solid 2px royalblue;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: royalblue;
     font-size: 15px;
 }
+
 #btnGlacial:hover {
     text-shadow: 0 0 50px royalblue;
     box-shadow: 0 0 15px royalblue;
     border-radius: 0 0 0 0;
 }
+
 #btnIgnio {
     margin: 1px;
     border: solid 2px chocolate;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: chocolate;
     font-size: 15px;
 }
+
 #btnIgnio:hover {
     text-shadow: 0 0 50px chocolate;
     box-shadow: 0 0 15px chocolate;
     border-radius: 0 0 0 0;
 }
+
 #btnGasoso {
     margin: 1px;
     border: solid 2px mediumaquamarine;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: mediumaquamarine;
     font-size: 15px;
 }
+
 #btnGasoso:hover {
     text-shadow: 0 0 50px mediumaquamarine;
     box-shadow: 0 0 15px mediumaquamarine;
     border-radius: 0 0 0 0;
 }
+
 #btnCorrosivo {
     margin: 1px;
     border: solid 2px yellowgreen;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: yellowgreen;
     font-size: 15px;
 }
+
 #btnCorrosivo:hover {
     text-shadow: 0 0 50px yellowgreen;
     box-shadow: 0 0 15px yellowgreen;
     border-radius: 0 0 0 0;
 }
+
 #btnViral {
     margin: 1px;
     border: solid 2px violet;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: violet;
     font-size: 15px;
 }
+
 #btnViral:hover {
     text-shadow: 0 0 50px violet;
     box-shadow: 0 0 15px violet;
     border-radius: 0;
 }
+
 #btnColisivo {
     margin: 1px;
     border: solid 2px cadetblue;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: cadetblue;
     font-size: 15px;
 }
+
 #btnColisivo:hover {
     text-shadow: 0 0 50px cadetblue;
     box-shadow: 0 0 15px cadetblue;
     border-radius: 0 0 15px 0;
 }
+
+
 /* botoes elementos termina */
+
+
 /* Display */
+
 .Display {
-    overflow-y:scroll;
+    overflow-y: scroll;
     max-height: 400px;
     margin-top: 30px;
     border: solid 1px;
     border-radius: 20px;
     display: none;
-    background: linear-gradient(#1c1c1c,black, #1c1c1c);
+    background: linear-gradient(#1c1c1c, black, #1c1c1c);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .Display::-webkit-scrollbar {
     background: transparent;
 }
+
+
 /* conteudo principal termina */
+
+
 /* troca de conteudo */
+
 #contDamage {
     display: none;
 }
+
 #contArmasTK {
     display: none;
 }
+
 #contEfemerasTK {
     display: none;
     color: blueviolet;
 }
+
 #contProgenitores {
     display: none;
     color: yellow;
 }
+
 #btn-contDamage {
     width: 200px;
     height: 50px;
     margin: 8px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     border-radius: 20px;
     border: solid 1px white;
     color: white;
@@ -280,6 +344,7 @@ button {
     font-family: serif;
     font-size: 20px;
 }
+
 #btn-contDamage:hover {
     width: 200px;
     height: 50px;
@@ -288,11 +353,12 @@ button {
     box-shadow: 0 0 15px red;
     color: red;
 }
+
 #btn-armasTK {
     width: 200px;
     height: 50px;
     margin: 8px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     border-radius: 20px;
     border: solid 1px white;
     color: white;
@@ -301,6 +367,7 @@ button {
     font-family: serif;
     font-size: 20px;
 }
+
 #btn-armasTK:hover {
     width: 200px;
     height: 50px;
@@ -309,11 +376,12 @@ button {
     box-shadow: 0 0 15px red;
     color: red;
 }
-#btn-efemerasTK{
+
+#btn-efemerasTK {
     width: 200px;
     height: 50px;
     margin: 8px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     border-radius: 20px;
     border: solid 1px white;
     color: white;
@@ -322,6 +390,7 @@ button {
     font-family: serif;
     font-size: 20px;
 }
+
 #btn-efemerasTK:hover {
     width: 200px;
     height: 50px;
@@ -330,11 +399,12 @@ button {
     box-shadow: 0 0 15px red;
     color: red;
 }
+
 #btn-Progenitores {
     width: 200px;
     height: 50px;
     margin: 8px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     border-radius: 20px;
     border: solid 1px white;
     color: white;
@@ -343,6 +413,7 @@ button {
     font-family: serif;
     font-size: 20px;
 }
+
 #btn-Progenitores:hover {
     width: 200px;
     height: 50px;
@@ -352,46 +423,54 @@ button {
     color: red;
 }
 
+
 /* menu conteudo armas tenet/kuva */
 
 #armasTenet {
     margin: 1px;
     border: solid 2px lightblue;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: lightblue;
     font-size: 15px;
 }
+
 #armasTenet:hover {
     text-shadow: 0 0 50px lightblue;
     box-shadow: 0 0 15px lightblue;
     border-radius: 0 0 0 15px;
 }
-#armasKuva{
+
+#armasKuva {
     margin: 1px;
     border: solid 2px red;
     border-radius: 0 0 15px 15px;
-    background: linear-gradient(black, #1c1c1c,black);
+    background: linear-gradient(black, #1c1c1c, black);
     height: 46px;
     color: red;
     font-size: 15px;
 }
-#armasKuva:hover{
+
+#armasKuva:hover {
     text-shadow: 0 0 50px red;
     box-shadow: 0 0 15px red;
     border-radius: 0 0 15px 0;
 }
 
+
 /* conteudo armas tenet/kuva */
+
 #conteudoArmaTenet {
     border: solid 1px lightblue;
     color: lightblue;
 }
+
 #conteudoArmaKuva {
     border: solid 1px red;
     color: red;
 }
+
 #tableStyleTenet {
     color: lightblue;
     display: flex;
