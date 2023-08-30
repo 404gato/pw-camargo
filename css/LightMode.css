@@ -38,8 +38,6 @@ button {
     display: flex;
     position: relative;
     justify-content: center;
-    height: 550px;
-    padding-bottom: 2.5rem;
 }
 
 #menuL {

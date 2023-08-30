@@ -31,7 +31,6 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 550px;
 }
 
 #rodape {

@@ -1,59 +1,122 @@
-#conteudoToxina {
-    color: lime;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 10px lime;
+* { margin: 0; padding: 0; }
+
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+
+    hr{
+        size:10;
+        width: 70vw;
+        margin-left: 14%;
+    }
+
+
+/* SLIDER */
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 70vw;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
 }
 
-#conteudoGlacial {
-    color: royalblue;
-    box-shadow: 0 0 10px royalblue;
+.slider li {
+    list-style: none;
+    position: absolute;
 }
 
-#conteudoEletrico {
-    color: mediumpurple;
-    box-shadow: 0 0 10px mediumpurple;
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
 }
 
-#conteudoRadiacao {
-    color: yellow;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 10px yellow;
+.slider input {
+    display: none;
 }
 
-#conteudoMagnetismo {
-    color: #1c1c1c;
-    text-shadow: 0 0 3px white;
-    box-shadow: 0 0 10px #1c1c1c;
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
 }
 
-#conteudoIgnio {
-    color: chocolate;
-    box-shadow: 0 0 10px chocolate;
+.slider li:nth-child(1) label {
+    left: 10px;
 }
 
-#conteudoGasoso {
-    color: mediumaquamarine;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 10px mediumaquamarine;
+.slider li:nth-child(2) label {
+    left: 40px;
 }
 
-#conteudoCorrosivo {
-    color: yellowgreen;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 10px yellowgreen;
+.slider li:nth-child(3) label {
+    left: 70px;
 }
 
-#conteudoViral {
-    color: violet;
-    text-shadow: 0 0 3px black;
-    box-shadow: 0 0 10px violet;
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
 
-#conteudoColisivo {
-    color: cadetblue;
-    box-shadow: 0 0 10px cadetblue;
-}
+/* FIM DE SLIDER */
 
+
+/* CARD */
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 350px;
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .image {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+  }
+
+  .blue {
+    border-left: 3px solid #4895ff;
+  }
+   
+  .green {
+    border-left: 3px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 3px solid #b3404a;
+  }
+/* FIM DE CARD */
 
 /*botoes dark mode e light mode abaixo*/
 
