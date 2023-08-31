@@ -6,8 +6,12 @@
 
     hr{
         size:10;
-        width: 70vw;
-        margin-left: 14%;
+        width: 68.5vw;
+        margin-left: 15vw;
+        border-color: #B31F15;
+    }
+    h1{
+        margin-top: 1%;
     }
 
 
@@ -20,6 +24,7 @@
     margin: auto;
     margin-top: 20px;
     position: relative;
+    transition: all 0.8s;
 }
 
 .slider li {
@@ -34,6 +39,17 @@
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+	
+	transition: all 0.8s;
+}
+.slider:hover img{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
 }
 
 .slider input {
@@ -41,7 +57,8 @@
 }
 
 .slider label {
-    background-color: #000;
+    margin-left: 48%;
+    background-color: rgb(255, 255, 255);
     bottom: 10px;
     cursor: pointer;
     display: block;
@@ -68,6 +85,7 @@
     visibility: visible;
     z-index: 10;
 }
+
 
 /* FIM DE SLIDER */
 
